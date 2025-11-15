@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <title>EXTERNO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./../public/css/estilos.css'>
+</head>
+<body>
+    <main>
+        <form action="server.html" method="get">
+
+            <table border="50%" align="center" >
+                    <thead>
+                        <tr >
+                            <th colspan="2">Practica Formulario Externo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Escriba su nombre: </th>
+                            <th><input type="text"></th>
+                        </tr>
+                        <tr>
+                            <th>Digame un Detalle de su vida: </th>
+                            <th><textarea name="textarea" id="detalles"></textarea></th>
+                        </tr>
+                        <tr>
+                            <th>Seleccione un detalle de su vida:</th>
+                            <th>
+                                <select name="musica_favorita[]" id="musica_favorita" multiple required size="10" autofocus>
+                                    <optgroup title="REGUETON" label="REGUETON">
+                                        <option value="Loba" selected>Shakira Loba</option>
+                                        <option value="anoche" selected>BAD BUNNY anoche</option>
+                                        <option value="ALL_of_me" disabled selected>John lennon all of me</option>
+                                        <option value="triste">JOSE JOSE TRISTE</option>
+                                    </optgroup>
+
+                                    <optgroup title="CHICHA" label="CHICHA">
+                                        <option value="Loba">Shakira Loba</option>
+                                        <option value="anoche" selected>BAD BUNNY anoche</option>
+                                        <option value="ALL_of_me">John lennon all of me</option>
+                                        <option value="triste">JOSE JOSE TRISTE</option>
+                                    </optgroup>
+                                </select>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>elija que dias de la semana usted trabaja:</th>
+                            <th align="left">
+                                <input type="checkbox" id="lunes" name="lunes">
+                                <strong>Lunes</strong>
+                                <br>
+                                <input type="checkbox" id="martes" name="martes">
+                                <strong>Martes</strong>
+                                <br>
+                                <input type="checkbox" id="miercoles" name="miercoles">
+                                <strong>Miércoles</strong>
+                                <br>
+                                <input type="checkbox" id="jueves" name="jueves">
+                                <strong>Jueves</strong>
+                                <br>
+                                <input type="checkbox" id="viernes" name="viernes">
+                                <strong>Viernes</strong>
+                                <br>
+                                <input type="checkbox" id="sabado" name="sabado">
+                                <strong>Sábado</strong>
+                                <br>
+                                <input type="checkbox" id="domingo" name="domingo">
+                                <strong>Domingo</strong>
+                            </th>
+                        </tr>
+                        <tr >
+                            <th>elija su género:</th>
+                            <th align="left">
+                                <input type="radio" name="genero" id="masculino">
+                                <strong>Másculino</strong>
+                                
+                                <input type="radio" name="genero" id="femenino">
+                                <strong>Femenino</strong>
+                                
+                                <input type="radio" name="genero" id="otro">
+                                <strong>Otro</strong>
+                            </th>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">
+                                <button
+                                    type="submit"
+                                    class="submit"
+                                >
+                                    Submit
+                                </button>
+                                
+                            </th>
+                        </tr>
+                    </tfoot>
+            </table>          
+        </form>
+    </main>
+</body>
+</html>

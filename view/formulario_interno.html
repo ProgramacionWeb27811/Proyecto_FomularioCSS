@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>INTERNO</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='main.js'></script>
+
+    <style>
+        input{
+            border-color: crimson;
+        }
+
+        textarea{
+            border-top-left-radius: 50%;
+        }
+
+        select{
+            zoom: 150%;
+            padding-block: 10%;
+        }
+        #checkbox{
+            zoom: 500%;
+            position: absolute;
+        }
+        input[type='radio']{
+            zoom: 500%;
+            accent-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="server.html" method="get">
+            <input type="text">
+            <br>
+            
+            <textarea name="escritura" id="borde-textarea"></textarea>
+            <br>
+
+            <select name="musica_favorita[]" id="musica_favorita" multiple required size="10" autofocus>
+                <optgroup title="REGUETON" label="REGUETON">
+                    <option value="Loba" selected>Shakira Loba</option>
+                    <option value="anoche" selected>BAD BUNNY anoche</option>
+                    <option value="ALL_of_me" disabled selected>John lennon all of me</option>
+                    <option value="triste">JOSE JOSE TRISTE</option>
+                </optgroup>
+
+                <optgroup title="CHICHA" label="CHICHA">
+                    <option value="Loba">Shakira Loba</option>
+                    <option value="anoche" selected>BAD BUNNY anoche</option>
+                    <option value="ALL_of_me">John lennon all of me</option>
+                    <option value="triste">JOSE JOSE TRISTE</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <br><br>
+
+            <input type="radio" name="radio" id="radio">
+            <input type="radio" name="" id="">
+        </form>
+    </main>
+</body>
+</html>

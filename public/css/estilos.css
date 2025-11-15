@@ -1,0 +1,39 @@
+input[type="text"] {
+  border: 2px solid #ff6600;
+  background-color: #fff0e0;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+textarea {
+  border: 2px solid #0077cc;
+  background-color: #e6f3ff;
+  padding: 12px;
+  border-radius: 14px;
+  font-family: "Courier New", monospace;
+}
+
+select {
+  border: 2px solid #28a745;
+  background-color: #e8ffe8;
+  padding: 8px;
+  border-radius: 6px;
+  color: #004d1a;
+}
+
+input[type="checkbox"] {
+  accent-color: #ff6600;
+  margin-right: 8px;
+  transform: scale(1.4);
+  cursor: pointer;
+  box-shadow: 0 0 4px #fff0e0;
+}
+
+input[type="radio"] {
+  accent-color: #00cc52;
+  margin-right: 8px;
+  transform: scale(1.4);
+  cursor: pointer;
+  border: 2px solid #00cc52;
+}
